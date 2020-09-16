@@ -1,0 +1,177 @@
+/* representando o raiz da arvore de elementos do html */
+:root {
+  /* variáveis CSS */
+  --bg: #d3d3d3;
+  --bg-dark-button: #000;
+  --image-color: #fff;
+  --color-display: #fff;
+  --bg-screen: #000;
+  --bg-button: #787878;
+  --bg-clear-entry: #ff8c00;
+  --bg-clear: #ffa500;
+}
+
+/* estilizando o body */
+body {
+  background-color: var(--bg) ;
+}
+
+/* estilo dark mode */
+.dark-mode {
+  --bg: #000;
+  --bg-dark-button: #d3d3d3;
+  --image-color: #000;
+  --color-display: #000;
+  --bg-screen: #fff;
+  --bg-button: #d3d3d3;
+  --bg-clear-entry: #0000ff;
+  --bg-clear: #03a9f4;
+
+}
+
+/* criando o botão */
+.btnTheme {
+  background-color: var(--bg-dark-button);
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;  
+  outline: none;
+}
+
+/* estilizando a imagem dentro do botão */
+i {
+  font-size: 25px;
+  color: var(--image-color);
+}
+
+/* posicionando a calculadora */
+.calculator {
+  width: 289px;
+  margin-top: 75px;
+  margin-left: 550px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* criando a tela da calculadora */
+.screen {
+  background-color: var(--bg-screen);
+  height: 80px;
+  width: 270.5px;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* criando o display da calculadora */
+p#display {
+  margin-top: 20px;
+  font-size: 40px;
+  text-align: right;
+  color: var(--color-display);
+}
+
+/* estilizando os botões da calculadora */
+.btn {
+  width: 33px;
+  background: var(--bg-button);
+  color: var(--color-display);  
+  padding: 20px;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+  margin-right: -5px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* estilizando quando o botão for clicado */
+.btn:active {
+  background-color: #74ff;
+  color: #fff; 
+}
+
+/* estilizando o botão para fica na forma arredondada */
+.btn:nth-child(18) {
+  border-radius: 0px 0px 0px 20px;
+}
+
+/* estilizando o botão para fica na forma arredondada 
+   e a largura do tamanho do espaço da calculadora  */
+.btn:nth-child(20) {
+  width: 105.5px;
+  border-radius: 0px 0px 20px 0px;
+}
+
+/* estilizando o botão clear entry */
+.btn:nth-child(2) {
+  background-color: var(--bg-clear-entry);
+  color: #fff;
+}
+
+/* estilizando o botão clear */
+.btn:nth-child(3) {
+  background-color: var(--bg-clear);
+  color: #fff;
+}
+
+/* estilizando ao clicar no botão clear entry */
+.btn:nth-child(2):active {
+  background-color: #fff;
+  color: var(--bg-clear-entry);
+}
+
+/* estilizando ao clicar no botão clear */
+.btn:nth-child(3):active {
+  background-color: #fff;
+  color: var(--bg-clear);
+}
+
+/* responsividade */
+@media(max-width: 1024px) {
+  .calculator {
+    width: 289px;
+    margin-top: 100px;
+    margin-left: 400px;
+    font-family: 'Orbitron', sans-serif;
+  } 
+}
+
+@media(max-width: 768px) {
+  .calculator {
+    width: 289px;
+    margin-top: 100px;
+    margin-left: 250px;
+    font-family: 'Orbitron', sans-serif;
+  } 
+}
+
+@media(max-width: 425px) {
+  .calculator {
+    width: 289px;
+    margin-top: 100px;
+    margin-left: 60px;
+    font-family: 'Orbitron', sans-serif;
+  } 
+}
+
+@media(max-width: 375px) {
+  .calculator {
+    width: 289px;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-family: 'Orbitron', sans-serif;
+  } 
+}
+
+@media(max-width: 320px) {
+  .calculator {
+    width: 289px;
+    margin-top: 100px;
+    margin-left: 5px;
+    font-family: 'Orbitron', sans-serif;
+  } 
+}
