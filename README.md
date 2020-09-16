@@ -1,7 +1,7 @@
 # Calculadora
 
-### :memo: Sobre a aplicação
-Este é um projeto pessoal criado por mim tendo como base uma calculadora que desenvolvi em um curso que realizado por mim de javascript completo.
+### 💻 Projeto
+Este é um projeto pessoal onde foi desenvolvido uma calculadora tendo como base o que aprendi em um curso de javascript completo.
 
 ### :bookmark_tabs: **Funcionalidades da Aplicação**
 Calculadora básica onde pode fazer as principais operações matemáticas: **adição**, **subtração**, **multiplicação**, **divisão**, **porcentagem**,
